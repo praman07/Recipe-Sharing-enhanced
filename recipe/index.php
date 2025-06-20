@@ -339,7 +339,7 @@ session_start();
       <?php for ($i = 1; $i <= 13; $i++): ?>
         <div class="card" style="left: <?= 85 * ($i - 1) + 30 ?>px; transform: rotate(<?= -30 + 5 * ($i - 1) ?>deg); z-index: <?= $i ?>;">
           <div class="card-inner">
-            <div class="card-back">Recipe <?= $i ?></div>
+            <div class="card-back">??</div>
             <div class="card-front"><img src="<?= $i ?>.jpg" alt="Recipe <?= $i ?>"></div>
           </div>
         </div>
@@ -350,9 +350,9 @@ session_start();
   </section>
 
   <div class="section">
-    <h2>What Dish Are You?</h2>
+    <h2>Random Dish For You?</h2>
     <div style="text-align: center;">
-      <p>What's your ideal weekend?</p>
+      <p>What's your mood ?</p>
      <button class="join" onclick="showResult('spicy')">Lazy & Spicy</button>
 <button class="join" onclick="showResult('light')">Fresh & Light</button>
 
@@ -553,18 +553,59 @@ document.addEventListener("DOMContentLoaded", function () {
   window.showResult = function (type) {
     const quizOptions = {
       spicy: [
-        "You are: Chole Bhature 🌶️",
-        "You are: Paneer Tikka 🔥",
-        "You are: Spicy Rajma Chawal 🍛",
-        "You are: Tandoori Aloo 😈",
-        "You are: Schezwan Noodles 🍜"
+        " Chole Bhature 🌶️",
+        " Paneer Tikka 🔥",
+        " Spicy Rajma Chawal 🍛", "Chole Bhature 🌶️",
+"Paneer Tikka 🔥",
+"Spicy Rajma Chawal 🍛",
+"Tandoori Aloo 😈",
+"Schezwan Noodles 🍜",
+"Chicken Biryani 🍗",
+"Aloo Tikki Chaat 🥔",
+"Spicy Misal Pav 🌶️",
+"Bhut Jolokia Curry 🔥🔥",
+"Kolhapuri Chicken 🍖",
+"Kadai Paneer 🌶️",
+"Mirchi Bajji 🌶️",
+"Garlic Chicken Fry 🧄",
+"Spicy Egg Curry 🍳",
+"Andhra Fish Curry 🐟",
+"Peri Peri Fries 🍟",
+"Chettinad Chicken 🍛",
+"Tandoori Mushroom 🍄",
+"Chilli Paneer 🌶️",
+"Pepper Rasam 🍵",
+
+        " Tandoori Aloo 😈",
+         "Schezwan Noodles 🍜"
+         
       ],
       light: [
-        "You are: Fruit Salad 🍓",
-        "You are: Cucumber Raita 🥒",
-        "You are: Lemon Rice 🍋",
-        "You are: Aam Panna 🥭",
-        "You are: Veg Soup 🍲"
+        " Fruit Salad 🍓",
+        " Cucumber Raita 🥒",
+        " Lemon Rice 🍋",
+        "Fruit Salad 🍓",
+"Cucumber Raita 🥒",
+"Lemon Rice 🍋",
+"Aam Panna 🥭",
+"Veg Soup 🍲",
+"Steamed Idlis 🍘",
+"Palak Soup 🍃",
+"Oats Upma 🌾",
+"Boiled Moong Salad 🥗",
+"Dhokla 🍥",
+"Vegetable Poha 🍛",
+"Lettuce Wraps 🥬",
+"Sweet Corn Salad 🌽",
+"Low-oil Pav Bhaji 🍞",
+"Bhel Puri (No Sev) 🍲",
+"Khichdi with Ghee 🍚",
+"Stuffed Tomatoes 🍅",
+"Grilled Zucchini 🥒",
+"Beetroot Cutlets ❤️",
+"Tomato Cucumber Sandwich 🥪",
+        " Aam Panna 🥭",
+        " Veg Soup 🍲"
       ]
     };
 
